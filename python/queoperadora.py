@@ -6,7 +6,7 @@ __maintainer__ = "Eduardo Orige"
 __email__ = "eduardo.orige@gmail.com"
 __status__ = "Em Producao"
 
-class Operadora:
+class QueOperadora:
 	"""
 	Classe com todos os métodos utilizados para validar um ddd, verificar um número de celular
 	e verificar a operadora.
@@ -61,11 +61,8 @@ class Operadora:
 		else:
 			return False
 
-	def operadora(self,celular):
-		"""
-		Os calculos e o modelo de calculo usados estao em http://www.simmtelecom.com.br/telecom/comeco-dos-numeros-dos-celulares-no-estados-por-operadora/
-		Prints tambem no diretorio img do repositorio.
-		
+	def queOperadora(self,celular):
+		"""		
 		Verifica corretamente seguindo o padrao anterior de numero de celular: 99 9999-9999
 		Se padrão nao for seguido, função retorna False.
 		
@@ -109,72 +106,71 @@ class Operadora:
 				
 			#elif cel == 99 onde a vivo nao esta: return CTBC
 		
-			else:	
-				if 96 <= cel <= 99:
-					return "VIVO"
+			else:
+				if cel == 80 or cel == 88 or cel == 89:
+					return "OI"
+					
+				elif 81 <= cel <= 87:
+					return "TIM"
 
 				elif 91 <= cel <= 94:
 					return "CLARO"
 
-				elif 81 <= cel <= 87:
-					return "TIM"
+				elif 96 <= cel <= 99:
+					return "VIVO"
 
 				#elif int(cel[0]) == 8 and int(cel[1]) != 1 or int(cel[1]) != 7:
 				#TODO
 				#Verificar isso. Tirar Novos Prints
-				elif cel == 80 or cel == 88 or cel == 89:
-					return "OI"
 				else:
 					return None
 
 		#---- RJ, ES ----#
 		elif 21 <= ddd <= 28:
-			if 74 <= cel <= 76:
+			if cel == 71 or cel == 72 or cel == 95:
+				return "VIVO"
+			
+			elif 74 <= cel <= 76:
 				return "CLARO"
 			
-			elif cel == 71 or cel == 72 or cel == 95:
-				return "VIVO"			
+			elif 80 <= cel <= 83:
+				return "TIM"
 			
 			elif 84 <= cel <= 86 or 87 <= cel == 89:
 				return "OI"
-			
-			elif 96 <= cel <= 99:
-				return "VIVO"
 
 			elif 91 <= cel <= 94:
 				return "CLARO"
-
-
-			elif 80 <= cel <= 83:
-				return "TIM"
-
+							
+			elif 96 <= cel <= 99:
+				return "VIVO"
+				
 			else:
 				return None
 
 		#---- MG ----#
 		elif 31 <= ddd <= 38:
+			if 81 <= cel <= 84:
+				return "CLARO"
 			
-			if cel == 85 or cel == 86 or cel == 89:
+			elif cel == 85 or cel == 86 or cel == 89:
 				return "OI"
-			
+						
+			elif 87 <= cel <= 88:
+				return "OI"
+
+			elif 91 <= cel <= 94:
+				return "TIM"
+				
 			#elif cel == 96:
 			#	return "CTBC"
+
+			elif 96 <= cel <= 99:
+				print "VIVO"
 			
 			elif ( 	9960 <= pre_cel <= 9979 or 
 					9991 <= pre_cel <= 9999 ):
 				return "CTBC"
-				
-			elif 96 <= cel <= 99:
-				print "VIVO"
-
-			elif 91 <= cel <= 94:
-				return "TIM"
-
-			elif 87 <= cel <= 88:
-				return "OI"
-
-			elif 81 <= cel <= 84:
-				return "CLARO"
 
 			else:
 				return None	
@@ -190,17 +186,17 @@ class Operadora:
 			#	return "SERCOMTEL"
 
 			else:
-				if 96 <= cel <= 99:
-					return "TIM"
-
-				elif 91 <= cel <= 94:
-					return "VIVO"
+				if 84 <= cel <= 85:
+					return "OI"
 
 				elif 87 <= cel <= 88:
 					return "CLARO"
 
-				elif 84 <= cel <= 85:
-					return "OI"
+				elif 91 <= cel <= 94:
+					return "VIVO"
+					
+				elif 96 <= cel <= 99:
+					return "TIM"
 
 				else:
 					return None
@@ -239,17 +235,17 @@ class Operadora:
 			#return "CTBC"
 			
 			else:
-				if 96 <= cel <= 99:
-					return "VIVO"
-
-				elif 91 <= cel <= 94:
-					return "CLARO"
-
-				elif 81 <= cel <= 82:
+				if 81 <= cel <= 82:
 					return "TIM"
 
 				elif 84 <= cel <= 85:
 					return "OI"
+
+				elif 91 <= cel <= 94:
+					return "CLARO"
+
+				elif 96 <= cel <= 99:
+					return "VIVO"
 
 				else:
 					return None	
@@ -273,28 +269,24 @@ class Operadora:
 				
 		#---------- Nordeste --------------#
 		elif 81 <= ddd <= 89:
-			
-			if 8719 <= pre_cel <= 8721 or cel == 88:
-				return "TIM"
-			
-			elif 8100 <= pre_cel <= 8200:
-				return "VIVO"
-			
-			elif 84 <= cel <= 86:
+			if 84 <= cel <= 86:
 				return "OI"
+			
+			elif 8719 <= pre_cel <= 8721 or cel == 88:
+				return "TIM"
 				
  			else:
-				if 96 <= cel <= 99:
-					return "TIM"
-
-				elif 91 <= cel <= 94:
-					return "CLARO"
+				if 81 <= cel <= 83:
+					return "VIVO"
 
 				elif 87 <= cel <= 88:
 					return "OI"
 
-				elif 81 <= cel <= 83:
-					return "VIVO"
+				elif 91 <= cel <= 94:
+					return "CLARO"
+
+				elif 96 <= cel <= 99:
+					return "TIM"
 
 				else:
 					return None
@@ -335,7 +327,7 @@ class Operadora:
 		celular = raw_input("Celular:")
 		if self.re_celular(celular):
 			if self.re_ddd(celular[:2]):
-				operadora = self.operadora(celular)
+				operadora = self.queOperadora(celular)
 				
 				if operadora == None: 
 					print "! Operadora não encontrada !"
@@ -348,5 +340,5 @@ class Operadora:
 				
 
 if __name__ == '__main__':
-	o = Operadora()
+	o = QueOperadora()
 	o.ui()
