@@ -1,0 +1,285 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, input, select, option,
+form, label, textarea, table, caption,
+tbody, tfoot, thead, tr, th, td{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 13px;
+    font-family: 'Droid Sans', Arial, Verdana;
+    vertical-align: baseline;
+    color: #000;
+    float: left;
+    text-align: left;
+}
+:focus{
+    outline: 0;
+}
+html{
+    width: 100%;
+}
+
+ol, ul{
+    list-style: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td{
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+    content: "";
+}
+blockquote, q{
+    quotes: "" "";
+}
+br, strong{
+    float: none;
+    color: inherit;
+}
+strong{
+    font-weight: bold;
+}
+.right {
+    float: right;
+}
+.none{
+    float: none;
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+}
+.cemporcento {
+	width: 100%;
+}
+
+body{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+	background-color: #3A5876;	
+}
+
+.global {
+	width: 400px;
+	float: none;
+	margin: 0 auto;
+}
+
+.conteudo {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.queOperadora {
+	width: 100%;
+	text-align: center;
+	font-family: "Yellowtail", cursive;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+.celular {
+	width: 340px;
+	height: 300px;
+	margin-top: 20px;
+	margin-left: 30px;
+	display: inline;
+}
+
+.ajudaCelular {
+	width: 100%;
+	margin-bottom: 5px;
+	font-family: "Yellowtail", cursive;
+	font-size: 25px;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+	color: #fff;
+}
+
+.formCelular {
+	width: 100%;
+}
+
+.formCelular #ddd_celular {
+	width: 60px;
+	padding: 18px 0px 18px 25px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px #ccc;
+	font-size: 30px;
+	color: #ccc;
+}
+
+.formCelular #celular {
+	width: 150px;
+	padding: 18px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px #ccc;
+	font-size: 30px;
+	color: #ccc;
+}
+
+.separa {
+	font-size: 70px;
+	margin: 0px 20px 0px 20px;
+	color: #000;
+}
+
+.apresentacao {
+	float: none;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.apresentacao a {
+	color: #EBB111;
+	text-shadow: 1px 1px 1px #000;
+	text-decoration: none;
+	float: none;
+}
+
+.apresentacao a:hover {
+	text-decoration: underline;
+}
+
+
+.logoOperadora #ctbc{
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.logoOperadora #claro{
+	margin-top: 30px;
+	margin-left: 130px;
+}
+
+.logoOperadora #oi{
+	margin-top: 40px;
+	margin-left: 110px;
+}
+
+.logoOperadora #sercomtel{
+	margin-top: 60px;
+	margin-left: 30px;
+}
+
+.logoOperadora #tim{
+	margin-top: 55px;
+	margin-left: 55px;
+}
+
+.logoOperadora #vivo{
+	margin-top: 50px;
+	margin-left: 70px;
+}
+
+.warnings {
+	width: 100%;
+}
+
+#warning_celular_2 .txtWarnCelular {
+	margin-top: 60px;
+}
+
+.txtWarn {
+	width: 250px;
+	margin-top: 50px;
+	margin-left: 5px;
+	color: #FF0000;
+	font-size: 15px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.txtWarnCelular {
+	width: 305px;
+	font-size: 15px;
+	margin-top: 50px;
+	color: #FF0000;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.disponivel {
+	width: 100%;
+}
+
+.tituloDisponivel {
+	width: 100%;
+	font-family: "Yellowtail", cursive;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+	color: #fff;
+}
+
+.sistemas {
+	width: 220px;
+	margin-left: 100px;
+	display: inline;
+}
+
+.sistemas a {
+	width: 50px;
+	margin-right: 20px;
+}
+
+.sistemas a:hover {
+	background-position: top left;
+}
+
+.sistemas .android{
+	height: 60px;
+	background-image: url("../img/android.png");
+	background-position: bottom left;
+}
+
+.sistemas .apple{
+	height: 60px;
+	background-image: url("../img/apple.png");
+	background-position: bottom left;
+}
+
+.sistemas .windows{
+	height: 50px;
+	margin-top: 10px;
+	background-image: url("../img/windows.png");
+	background-position: bottom left;
+}
+
+.obs {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	margin-top: 50px;
+}
+
+.redes {
+	width: 300px;
+	margin-top: 20px;
+	margin-left: 120px;
+	display: inline;
+	
+}
+
+.redes iframe {
+	margin-right: 40px;
+	display: inline;
+}
+
