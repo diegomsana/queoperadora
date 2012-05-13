@@ -84,9 +84,10 @@ body{
 	margin: 0 auto;
 }
 
-.queOperadora {
+.queOperadora a{
 	width: 100%;
 	text-align: center;
+	text-decoration: none;
 	font-family: "Yellowtail", cursive;
 	font-size: 50px;
 	color: #fff;
@@ -283,3 +284,40 @@ body{
 	display: inline;
 }
 
+.saibaMais {
+	width: 100%;
+}
+
+.saibaMais p {
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	text-align: left;
+}
+
+.saibaMais a {
+	float: none;
+	color: #EBB111;
+	text-shadow: 1px 1px 1px #000;
+	text-decoration: none;
+}
+.saibaMais .creditos {
+	width: 100%;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+}
+
+.saibaMais a:hover {
+	text-decoration: underline;
+}
+
+.voltar {
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/voltar.jpg");
+	background-position: bottom left;
+}
+
+.voltar:hover {
+	background-position: top left;
+}

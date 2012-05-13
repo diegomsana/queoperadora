@@ -24,6 +24,13 @@ function formClean(){
 	
 }
 
+function saibaMais(){
+	formClean();
+	document.getElementById("classCelular").className = "hidden";
+	document.getElementById("classDisponivel").className = "hidden";
+	document.getElementById("saibaMais").className= "saibaMais";
+}
+
 function ddd_regexp(ddd){
 	regDDD = /(1[1-9])$|(2[1-8])$|(3[1-8])$|(4[1-9])$|(5[1-5])$|(6[1-9])$|(7[1-9])$|(8[1-9])$|(9[1-9])$/
 	ok = regDDD.exec(ddd);
