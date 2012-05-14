@@ -77,7 +77,8 @@ class QueOperadora:
 			if 6340 <= pre_cel <= 6369:
 				return "TIM"
 			
-			elif (	6310 <= pre_cel <= 6339 or
+			elif (	6300 <= pre_cel <= 6339 or
+					6168 <= pre_cel <= 6181 or
 					6589 <= pre_cel <= 6599 or
 					7052 <= pre_cel <= 7062 or
 					cel == 76 			or
@@ -86,22 +87,21 @@ class QueOperadora:
 				return "CLARO"
 			
 			elif ( 	6057 <= pre_cel <= 6060 or
-					6193 <= pre_cel <= 6199 or
+					6182 <= pre_cel <= 6199 or
 					6370 <= pre_cel <= 6499 or
 					pre_cel == 7099 or
 					71 <= cel <= 75 or
 					cel == 95 ):
 				return "VIVO"
 			
-			elif (	6100 <= pre_cel <= 6193	or
-					pre_cel == 6299 or
+			elif (	6100 <= pre_cel <= 6167	or
+					6200 <= pre_cel <= 6299 or
 					cel == 65 or
 					6651 <= pre_cel <= 6799 or
 					cel == 68 or
 					pre_cel == 6999 or
 					7971 <= pre_cel <= 7999 or
-					cel == 80 or
-					8814 <= pre_cel <= 8899 ):
+					8010 <= pre_cel <= 8099):
 				return "OI"
 				
 			#elif cel == 99 onde a vivo nao esta: return CTBC
