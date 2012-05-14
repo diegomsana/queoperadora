@@ -27,20 +27,32 @@ function queOperadora(ddd,fone){
 			return "TIM";
 		}
 		else {
-			if ((pre_cel >= 6310 && pre_cel <= 6339) || (pre_cel >= 6589 && pre_cel <= 6599) ||
-				(pre_cel >= 7052 && pre_cel <= 7062) ||	cel == 76 ||
-				(pre_cel >= 8800 && pre_cel <= 8899) ||	cel == 89)	{
+			if (
+				(pre_cel >= 6168 && pre_cel <= 6181) || 
+				(pre_cel >= 6310 && pre_cel <= 6339) || 
+				(pre_cel >= 6589 && pre_cel <= 6599) ||
+				(pre_cel >= 7052 && pre_cel <= 7062) ||	
+				cel == 76 ||
+				(pre_cel >= 8800 && pre_cel <= 8899) ||	
+				cel == 89)	{
 					return "CLARO";
 			} else {
-				if ((pre_cel >= 6057 && pre_cel <= 6060) || (pre_cel >= 6193 && pre_cel <= 6199) ||
-					(pre_cel >= 6370 && pre_cel <= 6499) || pre_cel == 7099 ||
-					(cel >= 71 && cel <= 75) || cel == 95) {
+				if ((pre_cel >= 6057 && pre_cel <= 6060) || 
+					(pre_cel >= 6182 && pre_cel <= 6199) ||
+					(pre_cel >= 6370 && pre_cel <= 6499) ||
+					 pre_cel == 7099 ||
+					(cel >= 71 && cel <= 75) || 
+					cel == 95) {
 						return "VIVO";
 				} else {
-					if ((pre_cel >= 6100 && pre_cel <= 6193) || pre_cel == 6299 || cel == 65 || 
-						(pre_cel >= 6651 && pre_cel <= 6799) || cel == 68 || pre_cel == 6999 ||
-						(pre_cel >= 7971 && pre_cel <= 7999) || cel == 80 ){
-						//(pre_cel >= 8814 && pre_cel <= 8899)) {
+					if ((pre_cel >= 6100 && pre_cel <= 6167) || 
+					    (pre_cel >= 6200 && pre_cel <= 6299) || 
+						cel == 65 ||
+						(pre_cel >= 6651 && pre_cel <= 6799) || 
+						cel == 68 || 
+						pre_cel == 6999 ||
+						(pre_cel >= 7971 && pre_cel <= 7999) || 
+						(pre_cel >= 8010 && pre_cel <= 8099)){
 							return "OI";
 					} else {
 						if (cel >= 96 && cel <= 99) {

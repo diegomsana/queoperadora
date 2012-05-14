@@ -46,13 +46,13 @@ function queOperadora(ddd,fone){
 						return "VIVO";
 				} else {
 					if ((pre_cel >= 6100 && pre_cel <= 6167) || 
-					    (pre_cel >= 6200 || pre_cel <= 6299) || 
+					    (pre_cel >= 6200 && pre_cel <= 6299) || 
 						cel == 65 ||
 						(pre_cel >= 6651 && pre_cel <= 6799) || 
 						cel == 68 || 
 						pre_cel == 6999 ||
 						(pre_cel >= 7971 && pre_cel <= 7999) || 
-						(pre_cel >= 8010 && pre_cel <= 8099){
+						(pre_cel >= 8010 && pre_cel <= 8099)){
 							return "OI";
 					} else {
 						if (cel >= 96 && cel <= 99) {
