@@ -153,10 +153,7 @@ class QueOperadora:
 			if 81 <= cel <= 84:
 				return "CLARO"
 			
-			elif cel == 85 or cel == 86 or cel == 89:
-				return "OI"
-						
-			elif 87 <= cel <= 88:
+			elif 85 >= cel <= 89:
 				return "OI"
 
 			elif 91 <= cel <= 94:

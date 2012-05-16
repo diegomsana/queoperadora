@@ -102,40 +102,34 @@ function queOperadora(ddd,fone){
 			}
 		} else { //ACABA RJ, ES
 			if (ddd >= 31 && ddd <= 38) { //MG
-				if (cel == 85 || cel == 86 || cel == 89){
+				if (cel >= 85 && cel <= 89){
 					return "OI";
-				} else {
-					//TODO if (cel == 86)
+				} else {					
+					/*
+					TESTADO E NAO ENCONTRADO CELULARES COM CTBC
 					if ((pre_cel >= 9960 && pre_cel <= 9979) || (pre_cel >= 9991 && pre_cel <= 9999)){
 						return "CTBC";
 					} else {
-						if (cel >= 96 && cel <= 99){
-							return "VIVO";
+					*/
+					if (cel >= 95 && cel <= 99){
+						return "VIVO";
+					} else {
+						if (cel >= 91 && cel <= 94){
+							return "TIM";
 						} else {
-							if (cel >= 91 && cel <= 94){
-								return "TIM";
+							if (cel >= 81 && cel <= 84){
+								return "CLARO";
 							} else {
-								if (cel == 87 || cel == 88){
-									return "OI";										
-								} else {
-									if (cel >= 81 && cel <= 84){
-										return "CLARO";
-									} else {
-										return "";
-									}
-								}
+								return "";
 							}
 						}
 					}
 				}
 			} else { //ACABA MG
 				if (ddd >= 41 && ddd <= 49) { //SC,PR
-					if (ddd == 43 && pre_cel == 9998){
-						return "TIM";
+					if (ddd == 43 & pre_cel >= 9941 && pre_cel <= 9998) {
+						return "SERCOMTEL";
 					} else {
-						//TODO
-						//Londrina e Tamarana, PR
-						//if (pre_cel >= 9941 && pre_cel <= 9998){ window.alert("SERCOMTEL");} else {
 						if (cel >= 96 && cel <= 99 ){
 							return "TIM";
 						} else {
@@ -150,27 +144,29 @@ function queOperadora(ddd,fone){
 									} else {
 										return "";
 									}
-								}
+								}	
 							}
 						}
 					}
 				} else { //ACABA SC,PR
 					if (ddd >= 51 && ddd <= 55){ //RS
-						//TODO
-						//if (pre_cel >= 9911 <= pre_cel 9939){ window.alert("TIM")}
-						if (cel == 81 || cel == 82) {
-							return "TIM";
+						if (ddd == 53 && pre_cel >= 9911 && pre_cel <= 9920){ // PELOTAS
+							return "TIM"
 						} else {
-							if (cel == 84 || cel == 85){
-								return "OI";
+							if (cel == 81 || cel == 82) {
+								return "TIM";
 							} else {
-								if (cel >= 91 && cel <= 84){
-									return "CLARO";
+								if (cel == 84 || cel == 85){
+									return "OI";
 								} else {
-									if (cel >= 95 && cel <= 99) {
-										return "VIVO";
+									if (cel >= 91 && cel <= 84){
+										return "CLARO";
 									} else {
-										return "";
+										if (cel >= 95 && cel <= 99) {
+											return "VIVO";
+										} else {
+											return "";
+										}
 									}
 								}
 							}
@@ -183,8 +179,10 @@ function queOperadora(ddd,fone){
 								if (cel == 86){
 									return "OI";
 								} else {
-									//TODO
-									// if cel == 99 e nao existe vivo {return "CTBC";}
+									/*TODO
+									TESTES EFETUADOS E NUMERO DE CELULARES CTBC É MUITO BAIXO
+									if cel == 99 e nao existe vivo {return "CTBC";}
+									*/
 									if (cel >= 96 && cel <= 99){
 										return "VIVO";
 									} else {
