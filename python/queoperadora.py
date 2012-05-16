@@ -91,8 +91,13 @@ class QueOperadora:
 					6370 <= pre_cel <= 6499 or
 					pre_cel == 7099 or
 					71 <= cel <= 75 or
-					cel == 95 ):
+					cel == 95 or
+					cel == 99 ):
 				return "VIVO"
+				#TODO
+				#
+				#TESTADO E NÃO ENCONTRADOS NUMEROS SUFICIENTES DA CTBC
+				#elif cel == 99 onde a vivo nao esta: return CTBC
 			
 			elif (	6100 <= pre_cel <= 6167	or
 					6200 <= pre_cel <= 6299 or
@@ -104,8 +109,6 @@ class QueOperadora:
 					8010 <= pre_cel <= 8099):
 				return "OI"
 				
-			#elif cel == 99 onde a vivo nao esta: return CTBC
-		
 			else:
 				if cel == 80 or cel == 88 or cel == 89:
 					return "OI"
@@ -119,9 +122,6 @@ class QueOperadora:
 				elif 96 <= cel <= 99:
 					return "VIVO"
 
-				#elif int(cel[0]) == 8 and int(cel[1]) != 1 or int(cel[1]) != 7:
-				#TODO
-				#Verificar isso. Tirar Novos Prints
 				else:
 					return None
 
@@ -161,16 +161,14 @@ class QueOperadora:
 
 			elif 91 <= cel <= 94:
 				return "TIM"
-				
-			#elif cel == 96:
-			#	return "CTBC"
 
-			elif 96 <= cel <= 99:
+			elif 95 <= cel <= 99:
 				print "VIVO"
 			
-			elif ( 	9960 <= pre_cel <= 9979 or 
-					9991 <= pre_cel <= 9999 ):
-				return "CTBC"
+			#TESTADO E NAO ENCONTRADO CELULARES COM CTBC
+			#elif ( 	9960 <= pre_cel <= 9979 or 
+			#		9991 <= pre_cel <= 9999 ):
+			#	return "CTBC"
 
 			else:
 				return None	
@@ -180,10 +178,8 @@ class QueOperadora:
 			if ddd == 43 and cel == 81:
 				return "TIM"
 
-			#TODO
-			# Londrina e TAMARANA , PR
-			#elif 9941 <= pre_cel <= 9998:
-			#	return "SERCOMTEL"
+			elif ddd == 43 and 9941 <= pre_cel <= 9998:
+				return "SERCOMTEL"
 
 			else:
 				if 84 <= cel <= 85:
@@ -203,25 +199,23 @@ class QueOperadora:
 
 		#---------- RS --------------#
 		elif 51 <= ddd <= 55:
-			
-			#TODO
-			#if 9911 <= pre_cel <= 9939: #SE FOR DE PELOTAS E REGIAO
-			#	return "TIM"
-
-			if 81 <= cel <= 82:
+			if ddd == 53 and 9911 <= pre_cel <= 9920: #PELOTAS E REGIAO
 				return "TIM"
+			else :	
+				if 81 <= cel <= 82:
+					return "TIM"
 
-			elif 84 <= cel <= 85:
-				return "OI"
+				elif 84 <= cel <= 85:
+					return "OI"
 				
-			elif 91 <= cel <= 94:
-				return "CLARO"
+				elif 91 <= cel <= 94:
+					return "CLARO"
 			
-			elif 95 <= cel <= 99:
-				return "VIVO"
-		
-			else:
-				return None	 
+				elif 95 <= cel <= 99:
+					return "VIVO"
+			
+				else:
+					return None	 
 
 		#---- Centro Oeste ---------#
 		elif 61 <= ddd <= 69:
@@ -231,6 +225,7 @@ class QueOperadora:
 			elif cel == 86:
 				return "OI"
 			
+			#TESTES EFETUADOS E NUMERO DE CELULARES CTBC É MUITO BAIXO
 			#elif cel == 99 : onde nao existe vivo
 			#return "CTBC"
 			
@@ -324,20 +319,29 @@ class QueOperadora:
 		print "*****************************"
 		print
 		print "Exemplo de numero: 99 9999-9999"
+		print "Deixe em branco para sair!"
+		print
 		celular = raw_input("Celular:")
-		if self.re_celular(celular):
-			if self.re_ddd(celular[:2]):
-				operadora = self.queOperadora(celular)
+		while celular:
+			if self.re_celular(celular):
+				if self.re_ddd(celular[:2]):
+					operadora = self.queOperadora(celular)
 				
-				if operadora == None: 
-					print "! Operadora não encontrada !"
-				else: 
-					print "Operadora: ", operadora
+					if operadora == None: 
+						print "! Operadora não encontrada !"
+					else: 
+						print "Operadora: ", operadora
+				else:
+					print "! DDD Invalido !"
 			else:
-				print "! DDD Invalido !"
+				print "! Número de Celular Inválido !"
+			
+			print "-> Deixe em branco para sair"
+			print 
+			celular = raw_input("Celular:")
 		else:
-			print "! Número de Celular Inválido !"
-				
+			import sys
+			sys.exit(0)
 
 if __name__ == '__main__':
 	o = QueOperadora()
