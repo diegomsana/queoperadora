@@ -8,14 +8,14 @@ __status__ = "Em Producao"
 
 class QueOperadora:
 	"""
-	Classe com todos os m√©todos utilizados para validar um ddd, verificar um n√∫mero de celular
+	Classe com todos os mÈtodos utilizados para validar um ddd, verificar um n˙mero de celular
 	e verificar a operadora.
 	"""
 	def __init__(self):
 
 		"""
 		Initializer da Classe Operadora. Aqui uma lista de todos os regexp para
-		verifica√ß√£o de ddd's.
+		verificaÁ„o de ddd's.
 		"""
 		self.tests = [
 			'(11)|((1)[1-9]$)', #11 a 19 - SP
@@ -31,7 +31,7 @@ class QueOperadora:
 		
 	def operadoras(self):
 		"""
-		Mostra as operadoras que est√£o disponiveis para analise no sistema.
+		Mostra as operadoras que est„o disponiveis para analise no sistema.
 		"""
 		operadoras_disponiveis = ['Claro','CTBC','Oi','Sercomtel','TIM','Vivo',]
 									
@@ -39,8 +39,8 @@ class QueOperadora:
 
 	def re_ddd(self,ddd):
 		"""
-		Fun√ß√£o que monta todos os regexp da lista self.tests e verifica se o ddd
-		passado por parametro √© um ddd valido.
+		FunÁ„o que monta todos os regexp da lista self.tests e verifica se o ddd
+		passado por parametro È um ddd valido.
 		"""
 		import re
 		for test in self.tests:
@@ -50,8 +50,8 @@ class QueOperadora:
 
 	def re_celular(self,celular):
 		"""
-		Fun√ß√£o que verifica se o celular passado corresponde ao padr√£o solicitado
-		e se o n√∫mero tambem √© valido.
+		FunÁ„o que verifica se o celular passado corresponde ao padr„o solicitado
+		e se o n˙mero tambem È valido.
 		Ex: 99 9999-9999
 		"""
 		import re
@@ -64,9 +64,9 @@ class QueOperadora:
 	def queOperadora(self,celular):
 		"""		
 		Verifica corretamente seguindo o padrao anterior de numero de celular: 99 9999-9999
-		Se padr√£o nao for seguido, fun√ß√£o retorna False.
+		Se padr„o nao for seguido, funÁ„o retorna False.
 		
-		Primeiro verifica-se as exce√ß√µes dos prefixos com 4 digitos depois ent√£o verifica-se 
+		Primeiro verifica-se as exceÁıes dos prefixos com 4 digitos depois ent„o verifica-se 
 		os numeros "padroes".
 		"""		
 		ddd = int(celular[:2])
@@ -96,7 +96,7 @@ class QueOperadora:
 				return "VIVO"
 				#TODO
 				#
-				#TESTADO E N√ÉO ENCONTRADOS NUMEROS SUFICIENTES DA CTBC
+				#TESTADO E N√O ENCONTRADOS NUMEROS SUFICIENTES DA CTBC
 				#elif cel == 99 onde a vivo nao esta: return CTBC
 			
 			elif (	6100 <= pre_cel <= 6167	or
@@ -222,7 +222,7 @@ class QueOperadora:
 			elif cel == 86:
 				return "OI"
 			
-			#TESTES EFETUADOS E NUMERO DE CELULARES CTBC √â MUITO BAIXO
+			#TESTES EFETUADOS E NUMERO DE CELULARES CTBC … MUITO BAIXO
 			#elif cel == 99 : onde nao existe vivo
 			#return "CTBC"
 			
@@ -315,7 +315,7 @@ class QueOperadora:
 		"""
 		print "*****************************"
 		print "*                           *"
-		print "*   Qual √© a Operadora ?    *"
+		print "*   Qual È a Operadora ?    *"
 		print "*                           *"
 		print "*****************************"
 		print
@@ -329,13 +329,13 @@ class QueOperadora:
 					operadora = self.queOperadora(celular)
 				
 					if operadora == None: 
-						print "! Operadora n√£o encontrada !"
+						print "! Operadora n„o encontrada !"
 					else: 
 						print "Operadora: ", operadora
 				else:
 					print "! DDD Invalido !"
 			else:
-				print "! N√∫mero de Celular Inv√°lido !"
+				print "! N˙mero de Celular Inv·lido !"
 			
 			print "-> Deixe em branco para sair"
 			print 
