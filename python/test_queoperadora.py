@@ -529,9 +529,7 @@ class QueOperadora_NORDESTE_Tests(unittest.TestCase):
 
 				self.failIf(operadora != "VIVO" )
 	
-	
-	#CONFLITO
-	#88 em TIM e OI
+
 	def testOI_2(self):
 		for ddd in range(81,90):
 			for j in range(87,89):
@@ -597,7 +595,7 @@ class QueOperadora_NORTE_Tests(unittest.TestCase):
 				cel = '%s %s' % (ddd, j)
 				operadora = q.queOperadora(cel)
 
-				self.failIf(operadora != "AMAZONIA CELULAR" )
+				self.failIf(operadora != "OI" )
 
 if __name__ == '__main__':
 	unittest.main()

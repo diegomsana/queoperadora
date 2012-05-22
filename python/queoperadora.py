@@ -284,8 +284,6 @@ class QueOperadora:
 					return None
 
 		#---------- Norte --------------#
-		#TODO
-		# Verificar redundancia e AMAZONIA CELULAR
 		elif 91 <= ddd <= 99:
 			if 80 <= cel <= 83:
 				return "OI"
@@ -300,7 +298,7 @@ class QueOperadora:
 				return "VIVO"
 
 			elif 96 <= cel <= 99:
-				return "AMAZONIA CELULAR"
+				return "OI"
 
 			else:
 				return None
