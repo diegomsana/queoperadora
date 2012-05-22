@@ -264,6 +264,8 @@ class QueOperadora:
 			if 84 <= cel <= 86:
 				return "OI"
 			
+			#TODO TODO
+			#CONFLITO  88 em TIM e OI
 			elif 8719 <= pre_cel <= 8721 or cel == 88:
 				return "TIM"
 				
@@ -284,6 +286,8 @@ class QueOperadora:
 					return None
 
 		#---------- Norte --------------#
+		#TODO
+		# Verificar redundancia e AMAZONIA CELULAR
 		elif 91 <= ddd <= 99:
 			if 80 <= cel <= 83:
 				return "OI"
