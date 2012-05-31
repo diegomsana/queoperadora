@@ -49,34 +49,34 @@ namespace QueOperadora.Class
 			/// 
 			/// SP
 			/// 
-			if( m_ddd <= 11 || m_ddd <= 19 )
+			if( cm_EstaEntre( m_ddd, 11, 19 ) )
 			{
-				if( m_pre_cel <= 6340 || m_pre_cel <= 6369 )
+				if( cm_EstaEntre( m_pre_cel, 6340, 6369 ) )
 					return E_OPERADORA.TIM.ToString( );
 
-				else if( ( m_pre_cel <= 6310 || m_pre_cel <= 6339 ) ||
-					    ( m_pre_cel <= 6589 || m_pre_cel <= 6599 ) ||
-					    ( m_pre_cel <= 7052 || m_pre_cel <= 7062 ) ||
-					    ( m_cel == 76 ) ||
-					    ( m_pre_cel <= 8800 || m_pre_cel <= 8899 ) ||
-					    ( m_cel == 89 ) )
+				else if( cm_EstaEntre( m_pre_cel, 6310, 6339 ) ||
+					    cm_EstaEntre( m_pre_cel, 6589, 6599 ) ||
+					    cm_EstaEntre( m_pre_cel, 7052, 7062 ) ||
+					    m_cel == 76 ||
+					    cm_EstaEntre( m_pre_cel, 8800, 8899 ) ||
+					    m_cel == 89 )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( ( m_pre_cel <= 6057 || m_pre_cel <= 6060 ) ||
-					( m_pre_cel <= 6193 || m_pre_cel <= 6199 ) ||
-					( m_pre_cel == 7099 ) ||
-					( m_cel <= 71 || m_cel <= 75 ) ||
-					( m_cel == 95 ) )
+				else if( cm_EstaEntre( m_pre_cel, 6057, 6060 ) ||
+					 cm_EstaEntre( m_pre_cel, 6193, 6199 ) ||
+					 m_pre_cel == 7099 ||
+					 cm_EstaEntre( m_cel, 71, 75 ) ||
+					 m_cel == 95 )
 					return E_OPERADORA.VIVO.ToString( );
 
-				else if( ( m_pre_cel <= 6100 || m_pre_cel <= 6193 ) ||
-					( m_pre_cel == 6299 ) ||
-					( m_cel == 65 ) ||
-					( m_pre_cel <= 6651 || m_pre_cel <= 6799 ) ||
-					( m_pre_cel == 6999 ) ||
-					( m_pre_cel <= 7971 || m_pre_cel <= 7999 ) ||
-					( m_cel == 80 ) ||
-					( m_pre_cel <= 8814 || m_pre_cel <= 8899 ) )
+				else if( cm_EstaEntre( m_pre_cel, 6100, 6193 ) ||
+					m_pre_cel == 6299 ||
+					m_cel == 65 ||
+					cm_EstaEntre( m_pre_cel, 6651, 6799 ) ||
+					m_pre_cel == 6999 ||
+					cm_EstaEntre( m_pre_cel, 7971, 7999 ) ||
+					m_cel == 80 ||
+					cm_EstaEntre( m_pre_cel, 8814, 8899 ) )
 					return E_OPERADORA.OI.ToString( );
 
 				else
@@ -84,82 +84,81 @@ namespace QueOperadora.Class
 					if( m_cel == 80 || m_cel == 88 || m_cel == 89 )
 						return E_OPERADORA.OI.ToString( );
 
-					else if( m_cel <= 81 || m_cel <= 87 )
+					else if( cm_EstaEntre( m_cel, 81, 87 ) )
 						return E_OPERADORA.TIM.ToString( );
 
-					else if( m_cel <= 91 || m_cel <= 94 )
+					else if( cm_EstaEntre( m_cel, 91, 94 ) )
 						return E_OPERADORA.CLARO.ToString( );
 
-					else if( m_cel <= 96 || m_cel <= 99 )
+					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.VIVO.ToString( );
 				}
 			}
 			/// RJ e ES
-			else if( m_ddd <= 21 || m_ddd <= 28 )
+			else if( cm_EstaEntre( m_ddd, 21, 28 ) )
 			{
 				if( m_cel == 71 || m_cel == 72 || m_cel == 95 )
 					return E_OPERADORA.VIVO.ToString( );
 
-				else if( m_cel <= 74 || m_cel <= 76 )
+				else if( cm_EstaEntre( m_cel, 74, 76 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( m_cel <= 80 || m_cel == 83 )
+				else if( cm_EstaEntre( m_cel, 80, 83 ) )
 					return E_OPERADORA.TIM.ToString( );
 
-				else if( m_cel <= 84 || m_cel <= 86 || m_cel <= 87 || m_cel == 89 )
+				else if( cm_EstaEntre( m_cel, 84, 86 ) || cm_EstaEntre( m_cel, 87, 89 ) )
 					return E_OPERADORA.OI.ToString( );
 
-				else if( m_cel <= 91 || m_cel <= 94 )
+				else if( cm_EstaEntre( m_cel, 91, 94 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( m_cel <= 96 || m_cel <= 99 )
+				else if( cm_EstaEntre( m_cel, 96, 99 ) )
 					return E_OPERADORA.VIVO.ToString( );
 
 				else
 					return E_OPERADORA.NENHUMA.ToString( );
 			}
 			/// MG
-			else if( m_ddd <= 31 || m_ddd <= 38 )
+			else if( cm_EstaEntre( m_ddd, 31, 38 ) )
 			{
-				if( m_cel <= 81 || m_cel <= 84 )
+				if( cm_EstaEntre( m_cel, 81, 84 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
 				else if( m_cel == 85 || m_cel == 86 || m_cel == 89 )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( m_cel <= 87 || m_cel <= 88 )
+				else if( cm_EstaEntre( m_cel, 87, 88 ) )
 					return E_OPERADORA.TIM.ToString( );
 
-				else if( m_cel <= 91 || m_cel <= 94 )
+				else if( cm_EstaEntre( m_cel, 91, 94 ) )
 					return E_OPERADORA.TIM.ToString( );
 
-				else if( m_cel <= 96 || m_cel <= 99 )
+				else if( cm_EstaEntre( m_cel, 96, 99 ) )
 					return E_OPERADORA.VIVO.ToString( );
 
-				else if( ( m_pre_cel <= 9960 || m_pre_cel <= 9979 ) ||
-					m_pre_cel <= 9991 || m_pre_cel <= 9999 )
+				else if( cm_EstaEntre( m_pre_cel, 9960, 9979 ) || cm_EstaEntre( m_pre_cel, 9991, 9999 ) )
 					return E_OPERADORA.CTBC.ToString( );
 
 				else
 					return E_OPERADORA.NENHUMA.ToString( );
 			}
 			/// SC e PR
-			else if( m_ddd <= 41 || m_ddd <= 49 )
+			else if( cm_EstaEntre( m_ddd, 41, 49 ) )
 			{
 				if( m_ddd == 43 && m_cel == 81 )
 					return E_OPERADORA.TIM.ToString( );
 				else
 				{
-					if( m_cel <= 84 || m_cel <= 85 )
+					if( cm_EstaEntre( m_cel, 84, 85 ) )
 						return E_OPERADORA.OI.ToString( );
 
-					else if( m_cel <= 87 || m_cel <= 88 )
+					else if( cm_EstaEntre( m_cel, 87, 88 ) )
 						return E_OPERADORA.CLARO.ToString( );
 
-					else if( m_cel <= 91 || m_cel <= 94 )
+					else if( cm_EstaEntre( m_cel, 91, 94 ) )
 						return E_OPERADORA.VIVO.ToString( );
 
-					else if( m_cel <= 96 || m_cel <= 99 )
+					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.TIM.ToString( );
 
 					else
@@ -167,27 +166,27 @@ namespace QueOperadora.Class
 				}
 			}
 			/// RS
-			else if( m_ddd <= 51 || m_ddd <= 55 )
+			else if( cm_EstaEntre( m_ddd, 51, 55 ) )
 			{
-				if( m_cel <= 81 || m_cel <= 82 )
+				if( cm_EstaEntre( m_cel, 81, 82 ) )
 					return E_OPERADORA.TIM.ToString( );
 
-				else if( m_cel <= 84 || m_cel <= 85 )
+				else if( cm_EstaEntre( m_cel, 84, 85 ) )
 					return E_OPERADORA.OI.ToString( );
 
-				else if( m_cel <= 91 || m_cel <= 94 )
+				else if( cm_EstaEntre( m_cel, 91, 94 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( m_cel <= 95 || m_cel <= 99 )
+				else if( cm_EstaEntre( m_cel, 95, 99 ) )
 					return E_OPERADORA.VIVO.ToString( );
 
 				else
 					return E_OPERADORA.NENHUMA.ToString( );
 			}
 			/// Centro Oeste
-			else if( m_ddd <= 61 || m_ddd <= 69 )
+			else if( cm_EstaEntre( m_ddd, 61, 69 ) )
 			{
-				if( m_pre_cel <= 9551 || m_pre_cel <= 9559 )
+				if( cm_EstaEntre( m_pre_cel, 9551, 9559 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
 				else if( m_cel == 86 )
@@ -195,16 +194,16 @@ namespace QueOperadora.Class
 
 				else
 				{
-					if( m_cel <= 81 || m_cel <= 82 )
+					if( cm_EstaEntre( m_cel, 81, 82 ) )
 						return E_OPERADORA.TIM.ToString( );
 
-					else if( m_cel <= 84 || m_cel <= 85 )
+					else if( cm_EstaEntre( m_cel, 84, 85 ) )
 						return E_OPERADORA.OI.ToString( );
 
-					else if( m_cel <= 91 || m_cel <= 94 )
+					else if( cm_EstaEntre( m_cel, 91, 94 ) )
 						return E_OPERADORA.CLARO.ToString( );
 
-					else if( m_cel <= 96 || m_cel <= 99 )
+					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.VIVO.ToString( );
 
 					else
@@ -212,44 +211,44 @@ namespace QueOperadora.Class
 				}
 			}
 			/// BA e SE
-			else if( m_ddd <= 71 || m_ddd <= 79 )
+			else if( cm_EstaEntre( m_ddd, 71, 79 ) )
 			{
-				if( m_cel <= 81 || m_cel <= 83 )
+				if( cm_EstaEntre( m_cel, 81, 83 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( m_cel <= 86 || m_cel <= 88 )
+				else if( cm_EstaEntre( m_cel, 86, 88 ) )
 					return E_OPERADORA.OI.ToString( );
 
-				else if( m_cel <= 91 || m_cel <= 94 )
+				else if( cm_EstaEntre( m_cel, 91, 94 ) )
 					return E_OPERADORA.TIM.ToString( );
 
-				else if( m_cel <= 96 || m_cel <= 99 )
+				else if( cm_EstaEntre( m_cel, 96, 99 ) )
 					return E_OPERADORA.TIM.ToString( );
 
 				else
 					return E_OPERADORA.NENHUMA.ToString( );
 			}
 			/// Nordeste
-			else if( m_ddd <= 81 || m_ddd <= 89 )
+			else if( cm_EstaEntre( m_ddd, 81, 89 ) )
 			{
-				if( m_cel <= 84 || m_cel <= 86 )
+				if( cm_EstaEntre( m_cel, 84, 86 ) )
 					return E_OPERADORA.OI.ToString( );
 
-				else if( m_pre_cel <= 8719 || m_pre_cel <= 8721 || m_cel == 88 )
+				else if( cm_EstaEntre( m_pre_cel, 8719, 8721 ) || m_cel == 88 )
 					return E_OPERADORA.TIM.ToString( );
 
 				else
 				{
-					if( m_cel <= 81 || m_cel <= 83 )
+					if( cm_EstaEntre( m_cel, 81, 83 ) )
 						return E_OPERADORA.VIVO.ToString( );
 
-					else if( m_cel <= 87 || m_cel <= 88 )
+					else if( cm_EstaEntre( m_cel, 87, 88 ) )
 						return E_OPERADORA.OI.ToString( );
 
-					else if( m_cel <= 91 || m_cel <= 94 )
+					else if( cm_EstaEntre( m_cel, 91, 94 ) )
 						return E_OPERADORA.CLARO.ToString( );
 
-					else if( m_cel <= 96 || m_cel <= 99 )
+					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.TIM.ToString( );
 
 					else
@@ -257,18 +256,18 @@ namespace QueOperadora.Class
 				}
 			}
 			/// Norte
-			else if( m_ddd <= 91 || m_ddd <= 99 )
+			else if( cm_EstaEntre( m_ddd, 91, 99 ) )
 			{
-				if( m_cel <= 80 || m_cel <= 83 )
+				if( cm_EstaEntre( m_cel, 80, 83 ) )
 					return E_OPERADORA.OI.ToString( );
 
 				else if( m_cel == 84 )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( m_cel <= 87 || m_cel <= 88 )
+				else if( cm_EstaEntre( m_cel, 87, 88 ) )
 					return E_OPERADORA.OI.ToString( );
 
-				else if( m_cel <= 91 || m_cel <= 94 )
+				else if( cm_EstaEntre( m_cel, 91, 94 ) )
 					return E_OPERADORA.VIVO.ToString( );
 
 				else
@@ -276,6 +275,11 @@ namespace QueOperadora.Class
 			}
 
 			return E_OPERADORA.NENHUMA.ToString( );
+		}
+
+		private bool cm_EstaEntre( int p_valorComprar, int p_valor1, int p_valor2 )
+		{
+			return p_valorComprar >= p_valor1 || p_valorComprar <= p_valor2;
 		}
 	}
 }
