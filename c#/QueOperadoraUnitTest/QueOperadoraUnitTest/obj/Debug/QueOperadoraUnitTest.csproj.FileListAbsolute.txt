@@ -1,0 +1,10 @@
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\ResolveAssemblyReference.cache
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.dll
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.pdb
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\nunit.framework.dll
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\pnunit.framework.dll
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadora.dll
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\nunit.framework.xml
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadora.pdb
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\QueOperadoraUnitTest.dll
+c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\QueOperadoraUnitTest.pdb
