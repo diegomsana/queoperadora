@@ -284,8 +284,30 @@ body{
 	display: inline;
 }
 
+
+/*************************
+ O PROJETO
+**************************/
+.interna {
+	width: 500px;
+	float: none;
+	margin: 0 auto;
+}
+
+.voltar {
+	width: 48px;
+	height: 80px;	
+	margin-top: 230px;
+	background-image: url("../img/voltar.png");
+}
+
+.voltar:hover {
+	background-position: bottom left;
+}
+
 .saibaMais {
-	width: 100%;
+	width: 400px;
+	margin-left: 25px;
 }
 
 .saibaMais p {
@@ -309,15 +331,4 @@ body{
 
 .saibaMais a:hover {
 	text-decoration: underline;
-}
-
-.voltar {
-	width: 20px;
-	height: 20px;
-	background-image: url("../img/voltar.jpg");
-	background-position: bottom left;
-}
-
-.voltar:hover {
-	background-position: top left;
 }
