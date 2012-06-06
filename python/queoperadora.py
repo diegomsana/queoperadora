@@ -109,11 +109,8 @@ class QueOperadora:
 					8010 <= pre_cel <= 8099):
 				return "OI"
 				
-			else:
-				if cel == 8010 or cel == 8099 :
-					return "OI"
-					
-				elif 81 <= cel <= 87:
+			else:	
+				if 81 <= cel <= 87:
 					return "TIM"
 
 				elif 91 <= cel <= 94:
