@@ -39,12 +39,12 @@ namespace QueOperadora.Class
 		/// <returns>A operadora do celular</returns>
 		public string CM_QueOperadora( string p_celular )
 		{
-			if( string.IsNullOrWhiteSpace( p_celular ) )
-				throw new InvalidOperationException( "Parâmetro nulo ou vazio" );
+			if( string.IsNullOrWhiteSpace( p_celular ) || p_celular.Length < 6 )
+				return E_OPERADORA.NENHUMA.ToString( );
 
 			int m_ddd = Convert.ToInt32( p_celular.Substring( 0, 2 ) );
-			int m_cel = Convert.ToInt32( p_celular.Substring( 3, 5 ) );
-			int m_pre_cel = Convert.ToInt32( p_celular.Substring( 3, 7 ) );
+			int m_cel = Convert.ToInt32( p_celular.Substring( 2, 2 ) );
+			int m_pre_cel = Convert.ToInt32( p_celular.Substring( 2, 4 ) );
 
 			/// 
 			/// SP
@@ -279,7 +279,7 @@ namespace QueOperadora.Class
 
 		private bool cm_EstaEntre( int p_valorComprar, int p_valor1, int p_valor2 )
 		{
-			return p_valorComprar >= p_valor1 || p_valorComprar <= p_valor2;
+			return p_valorComprar >= p_valor1 && p_valorComprar <= p_valor2;
 		}
 	}
 }

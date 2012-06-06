@@ -78,9 +78,6 @@ namespace QueOperadora
 		/// </summary>
 		private void txt_numeroCelular_KeyUp( object sender, KeyEventArgs e )
 		{
-			if( string.IsNullOrWhiteSpace( txt_numeroCelular.Text ) || txt_numeroCelular.Text.Length != 10 )
-				return;
-
 			Class.Operadora m_operadora = new Class.Operadora( );
 			string m_retorno = m_operadora.CM_QueOperadora( txt_numeroCelular.Text );
 

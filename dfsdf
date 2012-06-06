@@ -1,0 +1,107 @@
+[33mcommit c23543c271bdff479d4ec1b74d931b7b371c42da[m
+Author: Cesare Cibien <cesa.cibien@gmail.com>
+Date:   Wed May 30 21:22:16 2012 -0300
+
+    Deixando a classe em c# funciona
+
+[33mcommit 7eb63cbd3dd20d5f331ba7383ea864edd8e1c228[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Tue May 22 20:33:04 2012 -0300
+
+    Novas modificacoes e melhoras para no módulo python
+
+[33mcommit a1ae5def3188d9eaf2c95b3134dc96e657411847[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Tue May 22 20:27:18 2012 -0300
+
+    Testes efetuados. Arquivo melhorado
+
+[33mcommit 3b4edd7f98b312673cceea145b45c03966d66b20[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Mon May 21 21:36:20 2012 -0300
+
+    Novos conflitos e redundancias encontradas
+
+[33mcommit 7e6482260897ace400670cd854bf1e67193a3e4d[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Mon May 21 21:33:23 2012 -0300
+
+    Novos erros e tarefas a serem feitas
+
+[33mcommit 4f8eddd0a14febfe9ff204ba1f5036ff74ef5b45[m
+Author: Cesare Cibien <cesa.cibien@gmail.com>
+Date:   Sun May 20 19:59:39 2012 -0300
+
+    Adicionando projeto c# para Windows Phone
+
+[33mcommit be69520d7255942ab565185539b83c8896c9b664[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Wed May 16 13:49:31 2012 -0300
+
+    Conflitos resolvidos. Versão 0.01 beta
+
+[33mcommit 5a7aa78f6144a404bf4b016f7eea9b28026da6b1[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Wed May 16 13:13:39 2012 -0300
+
+    Conflitos de MG, SP e Centro-Oeste corrigidos. Nova Interação com usuário
+
+[33mcommit b0aaee170bae2f3ea8bf22005d26e6f302906ced[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Mon May 14 13:38:17 2012 -0300
+
+    Conflitos resolvidos. Novas regras para São Paulo
+
+[33mcommit d6baa81ef12c7ff333fa539920b0e7d3333c6104[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Mon May 14 13:17:14 2012 -0300
+
+    Conflitos checados. Novas regras adicionadas.
+
+[33mcommit 0ad8e9fdf82306547b92e2f575f4df65db552dc6[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Sun May 13 22:06:51 2012 -0300
+
+    Informações sobre regras de operadoras.
+
+[33mcommit 412fd53fc765160233d4d120e0cf114d9acd0e00[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Sun May 13 19:30:44 2012 -0300
+
+    Link para / corrigido no logo do QueOperadora.
+
+[33mcommit 02a9285311dc2a0feda5662a47782b9e839683a7[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Sun May 13 19:20:41 2012 -0300
+
+    Ajuda adicionado ao site
+
+[33mcommit 22855cdc6d85c61621ec9dfa68a7d0e3b026f80b[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Sun May 13 16:23:20 2012 -0300
+
+    Tag beta adicionado
+
+[33mcommit 72a195aaba65fe98ef6da7098651f1b9f1fcbc2d[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Fri May 11 08:47:04 2012 -0300
+
+    Site no ar.
+
+[33mcommit cd8c813e9307dbaab0da6aac7cde5e2a0a68975b[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Thu May 10 23:56:48 2012 -0300
+
+    Redundancia retirada, ordem númerica nos ifs.
+
+[33mcommit ea3b646eba8c9ea34a549f293da4254363e8c351[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Thu May 10 23:55:44 2012 -0300
+
+    Ignore
+
+[33mcommit 03f4396e3e066a843b686542a28b9c81c19ddb6c[m
+Author: Eduardo Orige <eduardo.orige@gmail.com>
+Date:   Tue May 8 22:49:18 2012 -0300
+
+    Primeiro commit
