@@ -13,6 +13,21 @@ Linguagens Disponíveis
 * C# (Windows Phone)
 * Obj-C (iOS)
 
+Lista de Operadoras
+-------------------
+* Amazonia Celular 		-> Oi
+* Brasil Telecom 		-> Oi
+* BrT (Brasil Telecom)	-> Oi
+* Claro
+* CTBC
+* Oi
+* Sercomtel
+* Telemig 				-> Vivo
+* TIM
+* Unicel 				-> Não existe mais
+* Vivo
+
+
 Bugs
 -----
 1. Números Fixos não são reconhecidos.
