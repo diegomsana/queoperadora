@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1026]C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.dll</TopNode>
-  <SelectedNode>[0-1002]QueOperadoraUnitTest.Class.TestSP.TestClaro1</SelectedNode>
+  <TopNode>[0-1078]C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.dll</TopNode>
+  <SelectedNode>[0-1080]QueOperadoraUnitTest.Class</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1026]C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.dll" Expanded="true" />
-    <Node UniqueName="[0-1027]QueOperadoraUnitTest" Expanded="true" />
-    <Node UniqueName="[0-1028]QueOperadoraUnitTest.Class" Expanded="true" />
-    <Node UniqueName="[0-1000]QueOperadoraUnitTest.Class.TestSP" Expanded="true" />
+    <Node UniqueName="[0-1078]C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1079]QueOperadoraUnitTest" Expanded="true" />
+    <Node UniqueName="[0-1080]QueOperadoraUnitTest.Class" Expanded="true" />
   </Nodes>
 </VisualState>

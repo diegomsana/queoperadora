@@ -182,7 +182,6 @@ namespace QueOperadoraUnitTest.Class
 			}
 		}
 
-
 		[Test]
 		public void TestVivo5( )
 		{
