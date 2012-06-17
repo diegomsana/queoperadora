@@ -39,12 +39,18 @@ namespace QueOperadora.Class
 		/// <returns>A operadora do celular</returns>
 		public string CM_QueOperadora( string p_celular )
 		{
-			if( string.IsNullOrWhiteSpace( p_celular ) || p_celular.Length < 6 )
-				return E_OPERADORA.NENHUMA.ToString( );
+			int m_ddd = 0;
+			int m_cel = 0;
+			int m_pre_cel = 0;
 
-			int m_ddd = Convert.ToInt32( p_celular.Substring( 0, 2 ) );
-			int m_cel = Convert.ToInt32( p_celular.Substring( 2, 2 ) );
-			int m_pre_cel = Convert.ToInt32( p_celular.Substring( 2, 4 ) );
+			if( !string.IsNullOrWhiteSpace( p_celular ) && p_celular.Length >= 2 )
+				m_ddd = Convert.ToInt32( p_celular.Substring( 0, 2 ) );
+
+			if( !string.IsNullOrWhiteSpace( p_celular ) && p_celular.Length >= 4 )
+				m_cel = Convert.ToInt32( p_celular.Substring( 2, 2 ) );
+
+			if( !string.IsNullOrWhiteSpace( p_celular ) && p_celular.Length >= 6 )
+				m_pre_cel = Convert.ToInt32( p_celular.Substring( 2, 4 ) );
 
 			/// 
 			/// SP
@@ -53,38 +59,39 @@ namespace QueOperadora.Class
 			{
 				if( cm_EstaEntre( m_pre_cel, 6340, 6369 ) )
 					return E_OPERADORA.TIM.ToString( );
-
-				else if( cm_EstaEntre( m_pre_cel, 6310, 6339 ) ||
+				
+				else if( cm_EstaEntre( m_pre_cel, 6300, 6339 ) ||
+					    cm_EstaEntre( m_pre_cel, 6168, 6181 ) ||
 					    cm_EstaEntre( m_pre_cel, 6589, 6599 ) ||
 					    cm_EstaEntre( m_pre_cel, 7052, 7062 ) ||
 					    m_cel == 76 ||
-					    cm_EstaEntre( m_pre_cel, 8800, 8899 ) ||
-					    m_cel == 89 )
+					    cm_EstaEntre( m_pre_cel, 8800, 8899 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
 				else if( cm_EstaEntre( m_pre_cel, 6057, 6060 ) ||
-					 cm_EstaEntre( m_pre_cel, 6193, 6199 ) ||
+					 cm_EstaEntre( m_pre_cel, 6182, 6199 ) ||
+					 cm_EstaEntre( m_pre_cel, 6370, 6499 ) ||
 					 m_pre_cel == 7099 ||
 					 cm_EstaEntre( m_cel, 71, 75 ) ||
-					 m_cel == 95 )
+					 m_cel == 95 ||
+					 m_cel == 99 )
 					return E_OPERADORA.VIVO.ToString( );
 
-				else if( cm_EstaEntre( m_pre_cel, 6100, 6193 ) ||
+				else if( cm_EstaEntre( m_pre_cel, 6100, 6167 ) ||
+					cm_EstaEntre( m_pre_cel, 6200, 6299 ) ||
 					m_pre_cel == 6299 ||
 					m_cel == 65 ||
 					cm_EstaEntre( m_pre_cel, 6651, 6799 ) ||
+					m_cel == 68 ||
 					m_pre_cel == 6999 ||
 					cm_EstaEntre( m_pre_cel, 7971, 7999 ) ||
 					m_cel == 80 ||
-					cm_EstaEntre( m_pre_cel, 8814, 8899 ) )
+					cm_EstaEntre( m_pre_cel, 8010, 8099 ) )
 					return E_OPERADORA.OI.ToString( );
 
 				else
 				{
-					if( m_cel == 80 || m_cel == 88 || m_cel == 89 )
-						return E_OPERADORA.OI.ToString( );
-
-					else if( cm_EstaEntre( m_cel, 81, 87 ) )
+					if( cm_EstaEntre( m_cel, 81, 87 ) )
 						return E_OPERADORA.TIM.ToString( );
 
 					else if( cm_EstaEntre( m_cel, 91, 94 ) )
@@ -92,6 +99,8 @@ namespace QueOperadora.Class
 
 					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.VIVO.ToString( );
+
+					return E_OPERADORA.NENHUMA.ToString( );
 				}
 			}
 			/// RJ e ES
@@ -115,8 +124,7 @@ namespace QueOperadora.Class
 				else if( cm_EstaEntre( m_cel, 96, 99 ) )
 					return E_OPERADORA.VIVO.ToString( );
 
-				else
-					return E_OPERADORA.NENHUMA.ToString( );
+				return E_OPERADORA.NENHUMA.ToString( );
 			}
 			/// MG
 			else if( cm_EstaEntre( m_ddd, 31, 38 ) )
@@ -124,29 +132,26 @@ namespace QueOperadora.Class
 				if( cm_EstaEntre( m_cel, 81, 84 ) )
 					return E_OPERADORA.CLARO.ToString( );
 
-				else if( m_cel == 85 || m_cel == 86 || m_cel == 89 )
-					return E_OPERADORA.CLARO.ToString( );
-
-				else if( cm_EstaEntre( m_cel, 87, 88 ) )
-					return E_OPERADORA.TIM.ToString( );
+				else if( cm_EstaEntre( m_cel, 85, 89 ) )
+					return E_OPERADORA.OI.ToString( );
 
 				else if( cm_EstaEntre( m_cel, 91, 94 ) )
 					return E_OPERADORA.TIM.ToString( );
 
-				else if( cm_EstaEntre( m_cel, 96, 99 ) )
+				else if( cm_EstaEntre( m_cel, 95, 99 ) )
 					return E_OPERADORA.VIVO.ToString( );
 
-				else if( cm_EstaEntre( m_pre_cel, 9960, 9979 ) || cm_EstaEntre( m_pre_cel, 9991, 9999 ) )
-					return E_OPERADORA.CTBC.ToString( );
-
-				else
-					return E_OPERADORA.NENHUMA.ToString( );
+				return E_OPERADORA.NENHUMA.ToString( );
 			}
 			/// SC e PR
 			else if( cm_EstaEntre( m_ddd, 41, 49 ) )
 			{
 				if( m_ddd == 43 && m_cel == 81 )
 					return E_OPERADORA.TIM.ToString( );
+
+				else if( m_ddd == 43 && cm_EstaEntre( m_pre_cel, 9941, 9998 ) )
+					return E_OPERADORA.SERCOMTEL.ToString( );
+
 				else
 				{
 					if( cm_EstaEntre( m_cel, 84, 85 ) )
@@ -161,27 +166,30 @@ namespace QueOperadora.Class
 					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.TIM.ToString( );
 
-					else
-						return E_OPERADORA.NENHUMA.ToString( );
+					return E_OPERADORA.NENHUMA.ToString( );
 				}
 			}
 			/// RS
 			else if( cm_EstaEntre( m_ddd, 51, 55 ) )
 			{
-				if( cm_EstaEntre( m_cel, 81, 82 ) )
+				if( m_ddd == 53 && cm_EstaEntre( m_pre_cel, 9911, 9920 ) )
 					return E_OPERADORA.TIM.ToString( );
-
-				else if( cm_EstaEntre( m_cel, 84, 85 ) )
-					return E_OPERADORA.OI.ToString( );
-
-				else if( cm_EstaEntre( m_cel, 91, 94 ) )
-					return E_OPERADORA.CLARO.ToString( );
-
-				else if( cm_EstaEntre( m_cel, 95, 99 ) )
-					return E_OPERADORA.VIVO.ToString( );
-
 				else
+				{
+					if( cm_EstaEntre( m_cel, 81, 82 ) )
+						return E_OPERADORA.TIM.ToString( );
+
+					else if( cm_EstaEntre( m_cel, 84, 85 ) )
+						return E_OPERADORA.OI.ToString( );
+
+					else if( cm_EstaEntre( m_cel, 91, 94 ) )
+						return E_OPERADORA.CLARO.ToString( );
+
+					else if( cm_EstaEntre( m_cel, 95, 99 ) )
+						return E_OPERADORA.VIVO.ToString( );
+
 					return E_OPERADORA.NENHUMA.ToString( );
+				}
 			}
 			/// Centro Oeste
 			else if( cm_EstaEntre( m_ddd, 61, 69 ) )
@@ -206,8 +214,7 @@ namespace QueOperadora.Class
 					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.VIVO.ToString( );
 
-					else
-						return E_OPERADORA.NENHUMA.ToString( );
+					return E_OPERADORA.NENHUMA.ToString( );
 				}
 			}
 			/// BA e SE
@@ -223,10 +230,9 @@ namespace QueOperadora.Class
 					return E_OPERADORA.TIM.ToString( );
 
 				else if( cm_EstaEntre( m_cel, 96, 99 ) )
-					return E_OPERADORA.TIM.ToString( );
+					return E_OPERADORA.VIVO.ToString( );
 
-				else
-					return E_OPERADORA.NENHUMA.ToString( );
+				return E_OPERADORA.NENHUMA.ToString( );
 			}
 			/// Nordeste
 			else if( cm_EstaEntre( m_ddd, 81, 89 ) )
@@ -234,7 +240,7 @@ namespace QueOperadora.Class
 				if( cm_EstaEntre( m_cel, 84, 86 ) )
 					return E_OPERADORA.OI.ToString( );
 
-				else if( cm_EstaEntre( m_pre_cel, 8719, 8721 ) || m_cel == 88 )
+				else if( cm_EstaEntre( m_pre_cel, 8719, 8721 ) )
 					return E_OPERADORA.TIM.ToString( );
 
 				else
@@ -251,8 +257,7 @@ namespace QueOperadora.Class
 					else if( cm_EstaEntre( m_cel, 96, 99 ) )
 						return E_OPERADORA.TIM.ToString( );
 
-					else
-						return E_OPERADORA.NENHUMA.ToString( );
+					return E_OPERADORA.NENHUMA.ToString( );
 				}
 			}
 			/// Norte
@@ -270,8 +275,10 @@ namespace QueOperadora.Class
 				else if( cm_EstaEntre( m_cel, 91, 94 ) )
 					return E_OPERADORA.VIVO.ToString( );
 
-				else
-					return E_OPERADORA.NENHUMA.ToString( );
+				else if( cm_EstaEntre( m_cel, 96, 99 ) )
+					return E_OPERADORA.VIVO.ToString( );
+
+				return E_OPERADORA.NENHUMA.ToString( );
 			}
 
 			return E_OPERADORA.NENHUMA.ToString( );

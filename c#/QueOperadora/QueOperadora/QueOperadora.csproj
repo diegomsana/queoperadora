@@ -122,12 +122,12 @@
     <Resource Include="Images\appbar.upload.rest.png" />
     <Resource Include="Images\claro.png" />
     <Resource Include="Images\ctbc.png" />
-    <Resource Include="Images\oi.gif" />
     <Resource Include="Images\sercomtel.gif" />
     <Resource Include="Images\tim.png" />
     <Resource Include="Images\vivo.gif" />
     <Resource Include="Images\nenhuma.png" />
     <Resource Include="Images\queoperadora_wp.png" />
+    <Resource Include="Images\oi.jpg" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

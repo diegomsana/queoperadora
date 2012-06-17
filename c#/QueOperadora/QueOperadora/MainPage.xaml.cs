@@ -99,7 +99,7 @@ namespace QueOperadora
 
 					break;
 				case "OI":
-					BitmapImage m_oi = new BitmapImage( new Uri( "Images/oi.png", UriKind.RelativeOrAbsolute ) );
+					BitmapImage m_oi = new BitmapImage( new Uri( "Images/oi.jpg", UriKind.RelativeOrAbsolute ) );
 					img_operadora.Source = m_oi;
 
 					break;
