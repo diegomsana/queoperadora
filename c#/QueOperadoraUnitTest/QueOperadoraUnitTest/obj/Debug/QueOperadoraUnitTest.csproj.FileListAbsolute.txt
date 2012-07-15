@@ -8,3 +8,13 @@ c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOpera
 c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadora.pdb
 c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\QueOperadoraUnitTest.dll
 c:\users\cii\documents\visual studio 2010\Projects\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\QueOperadoraUnitTest.pdb
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.dll
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadoraUnitTest.pdb
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\nunit.framework.dll
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\pnunit.framework.dll
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadora.dll
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\nunit.framework.xml
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\bin\Debug\QueOperadora.pdb
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\ResolveAssemblyReference.cache
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\QueOperadoraUnitTest.dll
+C:\queoperadora\c#\QueOperadoraUnitTest\QueOperadoraUnitTest\obj\Debug\QueOperadoraUnitTest.pdb

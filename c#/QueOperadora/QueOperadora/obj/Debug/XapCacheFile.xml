@@ -1,10 +1,20 @@
-﻿<xapCache source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\Bin\Debug\QueOperadora.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="17/06/2012 15:22:58">
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="19/05/2012 23:17:39" />
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\Background.png" archivePath="Background.png" lastWriteTime="12/05/2012 14:55:33" />
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\Images\queoperadora_wp.png" archivePath="Images\queoperadora_wp.png" lastWriteTime="19/05/2012 23:17:27" />
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\obj\Debug\QueOperadora.dll" archivePath="QueOperadora.dll" lastWriteTime="17/06/2012 15:22:57" />
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="12/05/2012 14:55:33" />
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="12/05/2012 14:55:33" />
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/05/2012 15:31:15" />
-  <file source="C:\Users\CIi\Documents\Visual Studio 2010\Projects\QueOperadora\QueOperadora\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="12/05/2012 14:55:33" />
+﻿<xapCache source="C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\QueOperadora.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="14/07/2012 22:20:04">
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="19/05/2012 23:17:39" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Background.png" archivePath="Background.png" lastWriteTime="12/05/2012 14:55:33" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\queoperadora_wp.png" archivePath="Images\queoperadora_wp.png" lastWriteTime="19/05/2012 23:17:27" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\QueOperadora.dll" archivePath="QueOperadora.dll" lastWriteTime="14/07/2012 22:20:03" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="12/05/2012 14:55:33" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\appbar_save.png" archivePath="Images\appbar_save.png" lastWriteTime="14/07/2012 22:16:14" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\appbar_phone.png" archivePath="Images\appbar_phone.png" lastWriteTime="14/07/2012 20:47:17" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\appbar_phonebook.png" archivePath="Images\appbar_phonebook.png" lastWriteTime="14/07/2012 20:48:21" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\claro.png" archivePath="Images\claro.png" lastWriteTime="19/05/2012 21:00:44" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\ctbc.png" archivePath="Images\ctbc.png" lastWriteTime="19/05/2012 21:00:44" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\sercomtel.gif" archivePath="Images\sercomtel.gif" lastWriteTime="19/05/2012 21:00:44" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\tim.png" archivePath="Images\tim.png" lastWriteTime="19/05/2012 21:00:44" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\vivo.gif" archivePath="Images\vivo.gif" lastWriteTime="19/05/2012 21:00:44" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\nenhuma.png" archivePath="Images\nenhuma.png" lastWriteTime="19/05/2012 22:41:23" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Images\oi.jpg" archivePath="Images\oi.jpg" lastWriteTime="17/06/2012 15:51:22" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="12/05/2012 14:55:33" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/05/2012 15:31:15" />
+  <file source="C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="12/05/2012 14:55:33" />
 </xapCache>

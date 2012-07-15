@@ -11,3 +11,16 @@ c:\users\cii\documents\visual studio 2010\Projects\QueOperadora\QueOperadora\obj
 c:\users\cii\documents\visual studio 2010\Projects\QueOperadora\QueOperadora\obj\Debug\QueOperadora.dll
 c:\users\cii\documents\visual studio 2010\Projects\QueOperadora\QueOperadora\obj\Debug\QueOperadora.pdb
 c:\users\cii\documents\visual studio 2010\Projects\QueOperadora\QueOperadora\obj\Debug\XapCacheFile.xml
+C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\ApplicationIcon.png
+C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\Background.png
+C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\QueOperadora.dll
+C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\QueOperadora.pdb
+C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\AppManifest.xaml
+C:\queoperadora\c#\QueOperadora\QueOperadora\Bin\Debug\QueOperadora.xap
+C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\ResolveAssemblyReference.cache
+C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\App.g.i.cs
+C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\MainPage.g.i.cs
+C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\QueOperadora.g.resources
+C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\QueOperadora.dll
+C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\QueOperadora.pdb
+C:\queoperadora\c#\QueOperadora\QueOperadora\obj\Debug\XapCacheFile.xml
