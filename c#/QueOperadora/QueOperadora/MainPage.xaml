@@ -10,7 +10,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True" d:DesignHeight="768" d:DesignWidth="480">
+    shell:SystemTray.IsVisible="True" d:DesignHeight="696" d:DesignWidth="480">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -27,29 +27,26 @@
 
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Background="Transparent">
             <ScrollViewer Margin="6,-22,-6,6">
-                <StackPanel Height="510" Background="Transparent">
+                <StackPanel Height="627" Background="Transparent">
                     <TextBlock Height="30" Name="txb_numeroCelular" Text="Digite o número do celular:"/>
-                    <TextBox Height="72" Name="txt_numeroCelular" Text="" Width="433" InputScope="TelephoneNumber" Background="{StaticResource PhoneForegroundBrush}" TextChanged="txt_numeroCelular_TextChanged" KeyUp="txt_numeroCelular_KeyUp" />
-                    <Image Height="200" Name="img_operadora" Stretch="Fill" Width="200" />
-                    <TextBlock Height="30" Name="txb_linha" Text="" />
-                    <Button Content="Adicionar Contatos" Height="72" Name="btn_addContatos" Width="275" IsEnabled="False" Click="btn_addContatos_Click" />
-                    <Button Content="Ligar" Height="72" Name="btn_ligar" Width="275" IsEnabled="False" Click="btn_ligar_Click" />
+                    <TextBox Height="72" Name="txt_numeroCelular" Text="" Width="433" InputScope="Number" Background="{StaticResource PhoneForegroundBrush}" KeyUp="txt_numeroCelular_KeyUp" KeyDown="txt_numeroCelular_KeyDown" MaxLength="10" />
+                    <Image Height="144" Name="img_operadora" Stretch="Fill" Width="200" />
                 </StackPanel>
             </ScrollViewer>
         </Grid>
-
     </Grid>
 
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--" phone:PhoneApplicationPage.ApplicationBar>
+    <!--Menu de aplicação -->
+    <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" Opacity="1.0">
-            <shell:ApplicationBarIconButton IconUri="/Images/add.png" Text="Adicionar" IsEnabled="True" />
-            <shell:ApplicationBarIconButton IconUri="/Images/cancel.png" Text="Sair" IsEnabled="True" />
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_save.png" Text="Salvar Contato" IsEnabled="True" Click="salvarContato_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_phone.png" Text="Ligar" IsEnabled="True" Click="ligar_Click"/>
+            <!--shell:ApplicationBarIconButton IconUri="/Images/appbar_phonebook.png" Text="Verificar Contatos" IsEnabled="True" Click="verificarContato_Click"/>-->
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="Adicionar aos contatos" IsEnabled="True"/>
-                <shell:ApplicationBarMenuItem Text="Sair" IsEnabled="True"/>
+                <shell:ApplicationBarMenuItem Text="Salvar Contato" IsEnabled="True" Click="salvarContato_Click"/>
+                <shell:ApplicationBarMenuItem Text="Ligar" IsEnabled="True" Click="ligar_Click"/>
+                <!--shell:ApplicationBarMenuItem Text="Verificar Contatos" IsEnabled="True" Click="verificarContato_Click"/-->
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar-->
-
+    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>
