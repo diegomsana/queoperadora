@@ -36,7 +36,15 @@ function ddd_regexp(ddd){
 	ok = regDDD.exec(ddd);
 	if (!ok){
 		formClean();
-		document.getElementById("warning_ddd").className = "warnings";
+		document.getElementById("warning_ddd").className = "warnings right";
+	} 
+	
+	if (ddd == 11) {
+		formClean();
+		document.getElementById("numeroSP").className = "numeroSP";
+	} else {
+		formClean();
+		document.getElementById("numeroSP").className = "hidden";
 	}
 }
 
@@ -46,10 +54,10 @@ function fone_regexp(fone){
 	
 	if (!ok) {
 		formClean();
-		document.getElementById("warning_celular_2").className = "";
+		document.getElementById("warning_celular_2").className = "right";
 	} else {
 		if (document.getElementById("ddd_celular").value.length == 0){
-			document.getElementById("warning_ddd").className = "";
+			document.getElementById("warning_ddd").className = "right";
 		} else {
 			ddd = document.getElementById("ddd_celular").value;
 			var op = queOperadora(ddd,fone);
@@ -62,7 +70,7 @@ function fone_regexp(fone){
 				case "SERCOMTEL" : 			formClean() ; document.getElementById("sercomtel").className = ""; break;
 				case "TIM" : 				formClean() ; document.getElementById("tim").className = ""; break;
 				case "VIVO" : 				formClean() ; document.getElementById("vivo").className = ""; break;
-				default : 					formClean() ; document.getElementById("warning_celular").className = ""; break;
+				default : 					formClean() ; document.getElementById("warning_celular").className = "right"; break;
 			}
 		}
 	}

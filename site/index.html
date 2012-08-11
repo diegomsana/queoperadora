@@ -70,10 +70,14 @@
 		
 			<div id="classCelular" class="celular">
 				<div class="ajudaCelular">Número do Celular a ser pesquisado :</div>
+								
 				<form id="formCelular" class="formCelular" action="" method="get">
-					<input id="ddd_celular" type="text" value="" onClick="formClick(this)" onBlur="ddd_regexp(this.value)" onChange="ddd_regexp(this.value)" />
-					<div class="separa"> - </div>
-					<input id="celular" type="text" value="" onClick="formClick(this)" onBlur="fone_regexp(this.value)" onChange="fone_regexp(this.value)" />					
+					<div id="numeroSP" class="hidden">9</div>
+					<div class="agrupaForm">
+						<input id="ddd_celular" type="text" value="" onClick="formClick(this)" onBlur="ddd_regexp(this.value)" onChange="ddd_regexp(this.value)" />
+						<div class="separa"> - </div>
+						<input id="celular" type="text" value="" onClick="formClick(this)" onBlur="fone_regexp(this.value)" onChange="fone_regexp(this.value)" />
+					</div>
 				</form>
 				<div id="apresentacao" class="apresentacao">
 					Tem alguma dúvida? Quer saber mais?<br/>
@@ -96,7 +100,7 @@
 					</div>
 				</div>
 		
-				<div id="warning_celular" class="hidden">
+				<div id="warning_celular" class="">
 					<div class="txtWarnCelular">
 						Não encontramos uma operadora compatível.<br /> 
 					</div>

@@ -33,6 +33,7 @@ Bugs
 1. Números Fixos não são reconhecidos.
 2. Números Móveis que aderiram a **portabilidade** não são reconhecidos.
 3. Números da NEXTEL não são reconhecidos.
+4. Regexp não está fazendo seu trabalho, provavelmente por causa do masked_input.js
 
 Créditos
 --------

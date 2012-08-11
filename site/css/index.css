@@ -74,7 +74,7 @@ body{
 }
 
 .global {
-	width: 400px;
+	width: 500px;
 	float: none;
 	margin: 0 auto;
 }
@@ -82,6 +82,10 @@ body{
 .conteudo {
 	width: 100%;
 	margin: 0 auto;
+}
+
+.queOperadora {
+	width: 100%;
 }
 
 .queOperadora a{
@@ -95,11 +99,27 @@ body{
 }
 
 .celular {
-	width: 340px;
+	width: 480px;
 	height: 300px;
 	margin-top: 20px;
-	margin-left: 30px;
 	display: inline;
+}
+
+.numeroSP {
+	width: 30px;
+	padding: 8px 15px 8px 25px;
+	background-color: #ccc;
+	border-radius: 5px 0px 0px 5px;
+	font-size: 40px;
+	font-family: "Yellowtail", cursive;
+	color: #EBB111;
+	box-shadow: 0 0 15px #CCCCCC;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.agrupaForm {
+	float: right;
+	margin-right: 75px;
 }
 
 .ajudaCelular {
@@ -166,31 +186,32 @@ body{
 
 .logoOperadora #claro{
 	margin-top: 30px;
-	margin-left: 130px;
+	margin-left: 200px;
 }
 
 .logoOperadora #oi{
 	margin-top: 40px;
-	margin-left: 110px;
+	margin-left: 200px;
 }
 
 .logoOperadora #sercomtel{
 	margin-top: 60px;
-	margin-left: 30px;
+	margin-left: 100px;
 }
 
 .logoOperadora #tim{
 	margin-top: 55px;
-	margin-left: 55px;
+	margin-left: 140px;
 }
 
 .logoOperadora #vivo{
 	margin-top: 50px;
-	margin-left: 70px;
+	margin-left: 150px;
 }
 
 .warnings {
 	width: 100%;
+	text-align: center;
 }
 
 #warning_celular_2 .txtWarnCelular {
@@ -231,7 +252,7 @@ body{
 
 .sistemas {
 	width: 220px;
-	margin-left: 100px;
+	margin-left: 150px;
 	display: inline;
 }
 
