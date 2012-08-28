@@ -25,6 +25,7 @@
 	<link href="css/index.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="js/ui_operadora.js"></script>
 	<script type="text/javascript" src="js/queoperadora.js"></script>
+	<script type="text/javascript" src="js/ddd.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
 	<script type="text/javascript">
@@ -74,15 +75,19 @@
 				<form id="formCelular" class="formCelular" action="" method="get">
 					<div id="numeroSP" class="hidden">9</div>
 					<div class="agrupaForm">
-						<input id="ddd_celular" type="text" value="" onClick="formClick(this)" onBlur="ddd_regexp(this.value)" onChange="ddd_regexp(this.value)" />
+						<input id="ddd_celular" type="text" value="" onClick="formClick(this)" onBlur="new_ddd_regexp(this.value)" onChange="new_ddd_regexp(this.value)" />
 						<div class="separa"> - </div>
 						<input id="celular" type="text" value="" onClick="formClick(this)" onBlur="fone_regexp(this.value)" onChange="fone_regexp(this.value)" />
 					</div>
 				</form>
-				<div id="apresentacao" class="apresentacao">
-					Tem alguma dúvida? Quer saber mais?<br/>
-					<a href="o-projeto.html">Clique aqui</a>
+
+				<div id="estado" class="estado hidden">
+					<div id="bandeira" class="bandeira">
+						<img src="" title=""/>
+					</div>
+					<div id="nomeEstado" class="nomeEstado"></div>
 				</div>
+
 	
 				<div class="logoOperadora">
 					<img class="hidden" id="claro" 				src="img/claro.png" 			title="Claro" />
@@ -101,14 +106,14 @@
 				</div>
 		
 				<div id="warning_celular" class="hidden">
-					<div class="txtWarnCelular">
+					<div class="txtWarn">
 						Não encontramos uma operadora compatível.<br /> 
 					</div>
 					<img src="img/arrow-celular.png" />
 				</div>
 				
 				<div id="warning_celular_2" class="hidden">
-					<div class="txtWarnCelular">
+					<div class="txtWarn">
 						Número de Celular Inválido. Tente Outro!<br /> 
 					</div>
 					<img src="img/arrow-celular.png" />

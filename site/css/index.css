@@ -160,22 +160,28 @@ body{
 	color: #000;
 }
 
-.apresentacao {
-	float: none;
+
+/*Bandeiras*/
+
+.estado {
+	width: 100%;
+	margin-top: 10px;
 	text-align: center;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
 }
 
-.apresentacao a {
-	color: #EBB111;
-	text-shadow: 1px 1px 1px #000;
-	text-decoration: none;
-	float: none;
-}
+.bandeira {
+	margin-left: 85px;
+	border: 1px solid #666;
+	box-shadow: 0px 0px 11px #ccc;
+}	
 
-.apresentacao a:hover {
-	text-decoration: underline;
+.nomeEstado {
+	margin-top: 3px;
+	margin-left: 15px;
+	color: #FFD52B;
+	font-family: "Yellowtail", cursive;
+	font-size: 25px;
+	text-shadow: 1px 1px 1px #000;
 }
 
 
@@ -190,7 +196,7 @@ body{
 }
 
 .logoOperadora #oi{
-	margin-top: 40px;
+	margin-top: 25px;
 	margin-left: 200px;
 }
 
@@ -200,7 +206,7 @@ body{
 }
 
 .logoOperadora #tim{
-	margin-top: 55px;
+	margin-top: 35px;
 	margin-left: 140px;
 }
 
@@ -209,33 +215,38 @@ body{
 	margin-left: 150px;
 }
 
-.warnings {
-	width: 100%;
-	text-align: center;
-}
 
-#warning_celular_2 .txtWarnCelular {
-	margin-top: 60px;
-}
-
+/* Warnings */
 .txtWarn {
-	width: 250px;
-	margin-top: 50px;
-	margin-left: 5px;
 	color: #FF0000;
 	font-size: 15px;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #000;
 }
 
-.txtWarnCelular {
-	width: 305px;
-	font-size: 15px;
-	margin-top: 50px;
-	color: #FF0000;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #000;
+.warning_ddd {
+	width: 200px;
+	margin-top: 10px;
+	margin-left: 80px;
 }
+
+
+.warning_ddd .txtWarn {
+	margin-top: 50px;
+}
+
+
+.warning_celular {
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 80px;
+}
+
+.warning_celular .txtWarn {
+	margin-top: 50px;
+}
+
+
 
 .disponivel {
 	width: 100%;
@@ -295,7 +306,7 @@ body{
 .redes {
 	width: 300px;
 	margin-top: 20px;
-	margin-left: 120px;
+	margin-left: 175px;
 	display: inline;
 	
 }
@@ -303,53 +314,4 @@ body{
 .redes iframe {
 	margin-right: 40px;
 	display: inline;
-}
-
-
-/*************************
- O PROJETO
-**************************/
-.interna {
-	width: 500px;
-	float: none;
-	margin: 0 auto;
-}
-
-.voltar {
-	width: 48px;
-	height: 80px;	
-	margin-top: 230px;
-	background-image: url("../img/voltar.png");
-}
-
-.voltar:hover {
-	background-position: bottom left;
-}
-
-.saibaMais {
-	width: 400px;
-	margin-left: 25px;
-}
-
-.saibaMais p {
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-	text-align: left;
-}
-
-.saibaMais a {
-	float: none;
-	color: #EBB111;
-	text-shadow: 1px 1px 1px #000;
-	text-decoration: none;
-}
-.saibaMais .creditos {
-	width: 100%;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-	text-align: center;
-}
-
-.saibaMais a:hover {
-	text-decoration: underline;
 }
