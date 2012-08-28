@@ -1,7 +1,7 @@
 #-*- encoding: utf-8 -*-
 __author__ = "Eduardo Orige"
 __credits__ = ["Eduardo Orige"]
-__version__ = "0.01 beta"
+__version__ = "0.02"
 __maintainer__ = "Eduardo Orige"
 __email__ = "eduardo.orige@gmail.com"
 __status__ = "Em Producao"
@@ -123,7 +123,7 @@ class QueOperadora:
 					return None
 
 		#---- RJ, ES ----#
-		elif 21 <= ddd <= 28:
+		elif ddd == 21 or ddd == 22 or ddd == 24 or ddd == 27 or ddd == 28:
 			if cel == 71 or cel == 72 or cel == 95:
 				return "VIVO"
 			
@@ -146,7 +146,7 @@ class QueOperadora:
 				return None
 
 		#---- MG ----#
-		elif 31 <= ddd <= 38:
+		elif  31 <= ddd <= 35 or ddd == 37 or ddd == 38:
 			if 81 <= cel <= 84:
 				return "CLARO"
 			
@@ -192,7 +192,7 @@ class QueOperadora:
 					return None
 
 		#---------- RS --------------#
-		elif 51 <= ddd <= 55:
+		elif ddd == 51 or 53 <= ddd <= 55:
 			if ddd == 53 and 9911 <= pre_cel <= 9920: #PELOTAS E REGIAO
 				return "TIM"
 			else :	
@@ -240,7 +240,7 @@ class QueOperadora:
 					return None	
 
 		#---------- BA, SE ----------#
-		elif 71 <= ddd <= 79:
+		elif ddd == 71 or ddd == 73 or ddd == 74 or ddd == 75 or ddd == 77 or ddd == 79:
 			if 81 <= cel <= 83:
 				return "CLARO"
 

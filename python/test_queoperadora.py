@@ -7,6 +7,8 @@ __email__ = "eduardo.orige@gmail.com"
 __status__ = "Em Producao"
 __description__ = 'Testes Unitarios para o QueOperadora'
 
+
+# TESTES PARA A VERSAO 0.1
 import unittest
 from queoperadora import QueOperadora
 q = QueOperadora()

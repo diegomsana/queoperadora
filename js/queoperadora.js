@@ -2,7 +2,7 @@
 	queOperadora
 	Copyright (c) 2012 Eduardo Orige (www.eduardoorige.com.br)
 	Licensed under the BSD license 
-	Version: 0.1
+	Version: 0.2
 */
 
 function queOperadora(ddd,fone){
@@ -54,7 +54,7 @@ function queOperadora(ddd,fone){
 		}
 	
 	//RIO DE JANEIRO , ESPIRITO SANTO
-	} else if (ddd >= 21 && ddd <= 28){ //RJ, ES
+	} else if (ddd == 21 || ddd == 22 || ddd == 24 || ddd == 27 || ddd == 28){ //RJ, ES
 		if (cel >= 74 && cel <= 76){
 			return "CLARO";
 		
@@ -75,7 +75,7 @@ function queOperadora(ddd,fone){
 		}
 		
 	//MINAS GERAIS	
-	} else if (ddd >= 31 && ddd <= 38) { 
+	} else if (ddd >= 31 && ddd <= 35 || ddd >= 37 && ddd <= 38) { 
 		if (cel >= 85 && cel <= 89){
 			return "OI";
 		
@@ -114,7 +114,7 @@ function queOperadora(ddd,fone){
 		}
 	
 	//RIO GRANDE DO SUL
-	} else if (ddd >= 51 && ddd <= 55){ 
+	} else if (ddd == 51 || ddd >= 53 && ddd <= 55){ 
 		if (ddd == 53 && pre_cel >= 9911 && pre_cel <= 9920) {
 			// PELOTAS
 			return "TIM"
@@ -158,7 +158,7 @@ function queOperadora(ddd,fone){
 		}
 		
 	//BAHIA E SERGIPE
-	} else if (ddd >= 71 && ddd <= 79) {
+	} else if (ddd == 71 || ddd == 73 || ddd == 74 || ddd == 75 || ddd == 77 || ddd == 79){ //ddd == 71 && ddd <= 79) {
 		if (cel >= 81 && cel <= 83){
 			return "CLARO";
 		
