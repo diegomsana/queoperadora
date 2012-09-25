@@ -10,21 +10,15 @@ Linguagens Disponíveis
 -----------------------
 * Python
 * Javascript
-* C# (Windows Phone)
-* Obj-C (iOS)
+
 
 Lista de Operadoras
 -------------------
-* Amazonia Celular 		-> Oi
-* Brasil Telecom 		-> Oi
-* BrT (Brasil Telecom)	-> Oi
 * Claro
 * CTBC
 * Oi
 * Sercomtel
-* Telemig 				-> Vivo
 * TIM
-* Unicel 				-> Não existe mais
 * Vivo
 
 
@@ -33,7 +27,6 @@ Bugs
 1. Números Fixos não são reconhecidos.
 2. Números Móveis que aderiram a **portabilidade** não são reconhecidos.
 3. Números da NEXTEL não são reconhecidos.
-4. Regexp não está fazendo seu trabalho, provavelmente por causa do masked_input.js
 
 Créditos
 --------
@@ -43,7 +36,7 @@ Créditos
 Licença
 --------
 
-Copyright (c) 2012 Eduardo Orige, QueOperadora, Cesare Cibien
+Copyright (c) 2012 Eduardo Orige, Cesare Cibien
 
 All rights reserved.
 
@@ -55,7 +48,7 @@ modification, are permitted provided that the following conditions are met:
   b. Redistributions in binary form must reproduce the above copyright
      notice, this list of conditions and the following disclaimer in the
      documentation and/or other materials provided with the distribution.
-  c. Neither the name of Eduardo Orige nor the names of its contributors
+  c. Neither the name of Eduardo Orige, Cesare Cibien nor the names of its contributors
      may be used to endorse or promote products derived from this software
      without specific prior written permission.
 
