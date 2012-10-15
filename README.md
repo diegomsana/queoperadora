@@ -10,6 +10,7 @@ Linguagens Disponíveis
 -----------------------
 * Python
 * Javascript
+* C#
 
 
 Lista de Operadoras
@@ -30,13 +31,13 @@ Bugs
 
 Créditos
 --------
-* Eduardo Orige [www.eduardoorige.com.br](http://www.eduardoorige.com.br "Eduardo Orige - Blog")
+* Eduardo Orige [eduardo.orige@gmail.com](mailto:eduardo.orige@gmail.com "Email")
 * Césare Cibien [cesa.cibien@gmail.com](mailto:cesa.cibien@gmail.com "Email")
 
 Licença
 --------
 
-Copyright (c) 2012 Eduardo Orige, Cesare Cibien
+Copyright (c) 2012 Eduardo Orige, Césare Cibien
 
 All rights reserved.
 
@@ -48,7 +49,7 @@ modification, are permitted provided that the following conditions are met:
   b. Redistributions in binary form must reproduce the above copyright
      notice, this list of conditions and the following disclaimer in the
      documentation and/or other materials provided with the distribution.
-  c. Neither the name of Eduardo Orige, Cesare Cibien nor the names of its contributors
+  c. Neither the name of Eduardo Orige, Césare Cibien nor the names of its contributors
      may be used to endorse or promote products derived from this software
      without specific prior written permission.
 

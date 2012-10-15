@@ -1,5 +1,9 @@
 # Changelog
 
+## 15/10/2012
+* Correção no arquivo README.
+* Diretório **site** removido por questões de organização.
+
 ## 25/09/2012
 * Apenas correção no README
 
