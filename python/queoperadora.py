@@ -1,4 +1,4 @@
-#-*- encoding: utf-8 -*-
+#-*- coding: utf-8 -*-
 __author__ = "Eduardo Orige"
 __credits__ = ["Eduardo Orige"]
 __version__ = "0.02"
@@ -6,28 +6,14 @@ __maintainer__ = "Eduardo Orige"
 __email__ = "eduardo.orige@gmail.com"
 __status__ = "Em Producao"
 
+import sys
+
 class QueOperadora:
 	"""
-	Classe com todos os métodos utilizados para validar um ddd, verificar um número de celular
-	e verificar a operadora.
+	Classe com todos os métodos utilizados para verificar um número de celular e sua operadora.
 	"""
 	def __init__(self):
-
-		"""
-		Initializer da Classe Operadora. Aqui uma lista de todos os regexp para
-		verificação de ddd's.
-		"""
-		self.tests = [
-			'(11)|((1)[1-9]$)', #11 a 19 - SP
-			'(21)|((2)[1-8]$)', #21 a 28 - RJ, ES
-			'(31)|((3)[1-8]$)', #31 a 38 - MG
-			'(41)|((4)[1-9]$)', #41 a 49 - PR, SC
-			'(51)|((5)[1-5]$)', #51 a 55 - RS
-			'(61)|((6)[1-9]$)', #61 a 69 - Centro Oeste
-			'(71)|((7)[1-9]$)', #71 a 79 - BA,SE
-			'(81)|((8)[1-9]$)', #81 a 89 - Nordeste
-			'(91)|((9)[1-9]$)', #91 a 99 - AM
-		]
+		pass
 		
 	def operadoras(self):
 		"""
@@ -37,18 +23,7 @@ class QueOperadora:
 									
 		return sorted(operadoras_disponiveis)
 
-	def re_ddd(self,ddd):
-		"""
-		Função que monta todos os regexp da lista self.tests e verifica se o ddd
-		passado por parametro é um ddd valido.
-		"""
-		import re
-		for test in self.tests:
-			if re.compile(str(test)).match(str(ddd)):
-				return True
-
-
-	def re_celular(self,celular):
+	def regexCelular(self,celular):
 		"""
 		Função que verifica se o celular passado corresponde ao padrão solicitado
 		e se o número tambem é valido.
@@ -302,41 +277,35 @@ class QueOperadora:
 		else:
 			return False
 
-	def ui(self):
-		"""
-		Parte grafica para teste em terminal.
-		"""
-		print "*****************************"
-		print "*                           *"
-		print "*   Que Operadora é Essa ?  *"
-		print "*                           *"
-		print "*****************************"
-		print
-		print "Exemplo de numero: 99 9999-9999"		
-		print
-		print "Deixe em branco para sair!"
-		celular = raw_input("Celular:")
-		while celular:
-			if self.re_celular(celular):
-				if self.re_ddd(celular[:2]):
-					operadora = self.queOperadora(celular)
-				
-					if operadora == None: 
-						print "! Operadora não encontrada !"
-					else: 
-						print "Operadora: ", operadora
-				else:
-					print "! DDD Invalido !"
-			else:
-				print "! Número de Celular Inválido !"
+	def terminal(self):
 
-			print 
-			print "-> Deixe em branco para sair"
-			celular = raw_input("Celular:")
-		else:
-			import sys
+		Error = "Utilize: \npython queoperadora.py [DDD] [CELULAR]\npython queoperadora.py 99 9999-9999"
+		
+
+		if len(sys.argv) == 3:
+			
+			celular = ""
+			for param in sys.argv[1:]: celular += param + " "
+
+			
+			operadora = self.queOperadora(celular)
+
+			if operadora == None: 
+				print "! Operadora não encontrada !"
+			else: 
+				print operadora
+			
 			sys.exit(0)
+		
+		else:
+			print Error
+			sys.exit(1)
+		
+	def main(self):
+		self.terminal()
+
+
 
 if __name__ == '__main__':
-	o = QueOperadora()
-	o.ui()
+	q = QueOperadora()
+	q.terminal()

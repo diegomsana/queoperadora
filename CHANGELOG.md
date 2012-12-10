@@ -1,5 +1,11 @@
 # Changelog
 
+## 10/12/2012
+* É possível fazer consultas via linha de comando. Ex.: python queoperadora.py --help
+* README atualizado.
+* LICENSE.txt criado.
+* Classes de DDD retiradas.
+
 ## 15/10/2012
 * Correção no arquivo README.
 * Diretório **site** removido por questões de organização.
@@ -12,7 +18,6 @@
 * Com base nos DDDs validos, os arquivos queoperadora.js e queoperadora.py foram alterados para que fiquem coerentes com as regras.
 * Novos arquivos ddd.js e ddd.py que forcenem funções para o reconhecimento do DDD.
 * Para cada estado, bandeiras .gif foram colocadas no site.
-
 
 ## 11/08/2012
 
