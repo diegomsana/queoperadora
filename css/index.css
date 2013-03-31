@@ -315,3 +315,14 @@ body{
 	margin-right: 40px;
 	display: inline;
 }
+
+.mailto {
+	float: none;
+	color: #B0893B;
+	text-shadow: 1px 1px 1px #000;
+	text-decoration: none;
+}
+
+.mailto:hover {
+	text-decoration: underline;
+}
